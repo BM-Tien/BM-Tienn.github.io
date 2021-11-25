@@ -3,8 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
+body {
+    height: auto;
+}
 .wapper {
-    width: 1440px;
+    /* width: 1440px; */
     margin: auto ;
 }
 .content {
@@ -179,7 +182,7 @@ footer {
     background-color: #1C1C1E;
     color: #ffffff;
     height: 430px;
-    width: 1440px;
+    /* width: 1440px; */
     margin: 0px auto;
 }
 li{
@@ -190,13 +193,15 @@ li{
 }
 .footer-right {
     font-size: 14px;
-    margin-top: 70px ;
-    margin-left: 160px;
+     margin-top: 70px ;
+    /* margin-left: 160px; */ 
     padding: 0px;
+    padding-left: 30px;
 }
 .footer-content {
     height: 395px;
-    display: flex;
+    margin: 0px auto;
+    /* display: flex; */
 }
 .footer-text{
     margin-top: 20%;
@@ -216,16 +221,16 @@ footer .footer-bottom p {
     padding-top: 10px;
     color: #ffffff;
 }
-footer .logo {
+/* footer .logo {
     margin-left: 150px;
-}
+} */
 footer .footer-menu1 {
     margin-top:  40px;
-    margin-left:  180px;
+    /* margin-left:  180px; */
 }
 footer .footer-menu2 {
     margin-top:  40px;
-    margin-left:  10px;
+    /* margin-left:  10px; */
 }
 footer .contact-div {
     display: flex;
@@ -367,7 +372,7 @@ p{
     margin-left: 25% ;
     margin-bottom: 0px;
 }
-header .header-top .header-logo ,
+/* header .header-top .header-logo , */
 header .header-content .header-text{
     margin-left: -70px;
 }
@@ -427,8 +432,7 @@ header .header-bottom {
     padding: 215px;
 }
 .thank-from {
-    width: 845px;
-    height: 530px;
+    
     background-color:#ffffff;
     margin: auto;
     text-align:center;
@@ -442,7 +446,7 @@ header .header-bottom {
 .thank-from p {
     font-size: 18px;
     line-height : 24px;
-    width: 583px;
+    
     margin:auto;
     padding: 46px 0px;
 }
@@ -455,6 +459,7 @@ header .header-bottom {
     color:#ffffff;
     border:none;
 }
+
 /* thank-page */
 /* list-our */
 .list-tour .filter-form {
@@ -633,11 +638,12 @@ div.filter:hover div.filter-hover {
 }
 .checkout {
     width: 100%;
-    display: flex;
     margin: 0px auto;
+    height: auto;
 }
-.check-list {
-    width: 635px;
+.check-list  {
+    padding: 0px;
+    height: 1500px;
 }
 .check-list .input-flex {
     display: flex;
@@ -657,7 +663,10 @@ div.filter:hover div.filter-hover {
 .input-flex-left {
     margin-right: 35px;
 }
-.input-flex-address, .check-list .input-flex-address input {
+.input-flex-address {
+    margin: 0px !important;
+}
+.input-flex-address div input {
     width: 635px;
 }
 .check-list h2 {
@@ -675,6 +684,10 @@ div.filter:hover div.filter-hover {
 .check-list .check-list-box {
     display: flex;
     margin: 10px 0px;
+}
+.check-list .check-list-box  .img-card {
+    width: 232px;
+    height: 33px;
 }
 .check-list .check-list-box input[type=checkbox] {
     width: 20px;
@@ -697,16 +710,20 @@ div.filter:hover div.filter-hover {
     margin-top: 20px;
 }
 .check-right {
-    margin-left: 150px;
+    padding-top: 20px;
+    padding-left: 100px;
+
 }
 .check-form {
     width: 400px;
     height: 450px;
     padding: 30px;
     background-color: #f4f4f4;
-    margin-top: 158px;
-    margin-left: 150px;
+    /* margin-top: 158px;
+    margin-left: 0px; */
+    margin: 0px; 
 }
+
 .check-form .checkout-map {
     background-image: url('/img/icon/map.svg');
     background-repeat: no-repeat;
@@ -763,7 +780,7 @@ div.filter:hover div.filter-hover {
     background-color: #1C1C1E;
     width: 400px;
     height: 80px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     display: flex;
     padding: 30px;
 }
@@ -1028,14 +1045,13 @@ video {
     height: 400px;
     margin: 30px 0px;
 }
-.tour-detail-list {
-    /* display: none; */
+/*.tour-detail-list {
+     display: none;
 }
-/* .review-play {
+ .review-play {
     display: block;
 } */
 
-/*     */
 .addition-play ul li{
     list-style-type:disc;
     height: auto;
@@ -1104,3 +1120,238 @@ video {
     line-height: 72px;
     font-weight: 600;
 }
+.review-comment {
+    height: 240px;
+}
+.review-img-avata {
+    width:83px;
+    height:83px;
+    border-radius: 50%;
+    margin: 10px 20px 0px 0px;
+}
+
+.review-comment p {
+    line-height: 30px;
+    text-align: justify;
+    padding-right: 30px;
+}
+.review-name p {
+    margin-top: 10px;
+}
+.review-name .review-name-img {
+    margin: 0px 10px;
+}
+.review-pagination {
+    height: 100px;
+    padding: 0px;
+}
+.review-pagination .review-pagi-ul li {
+    margin: 0px;
+    width: 48px;
+    height: 48px;
+    margin-right: 24px;
+}
+.review-pagination .review-pagi-ul li a {
+    width: 48px;
+    height: 48px;
+    padding: 10px 0px 0px 18px;
+    background-color: #E8E9EA;
+    color: #1C1C1E;
+    font-size: 16px;
+    line-height: 20px;
+}
+.review-pagination .review-pagi-ul li .review-active {
+    background-color: #1C1C1E;
+    color: #F4F4F4;
+}
+.review-upload ,  
+.review-upload form {
+    height: 264px;
+}
+.review-upload {
+    padding-top: 20px;
+}
+.review-upload .avta-upload {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.review-upload input {
+    width: 554px;
+    height: 127px;
+    padding: 0px;
+    margin-bottom: 60px;
+}
+.review-upload form img {
+    width: 168px;
+    height: 28px;
+}
+.review-upload form button {
+    background-color: #FF7B42;
+    color: #F4F4F4;
+    width: 170px;
+    height: 44px;
+    padding: 0px;
+    float: right;
+    margin: 0px;
+}
+.review-form-right {
+    padding: 20px 36px;
+}
+.review-form-right .review-form-range strong {
+    font-size: 18px;
+    line-height: 28px;
+}
+.review-range {
+    width: 200px;
+    height: 4px;
+    background-color: #E5E5E5;
+    margin: 10px 10px;
+}
+.review-form-right .review-form-range p {
+    float: right;
+}
+.review-form-range {
+    margin: 20px 0px;
+}
+
+/*  */
+@media screen and (max-width: 1024px) {
+    
+}
+@media  (max-width: 768px) {
+    /* checkout */
+    .check-list {
+        height: 1620px;
+    }
+    .checkout input {
+        width: 110% !important;
+    }
+    .input-flex-address {
+        width: 88% ;
+    }
+    /*  */
+}
+@media (max-width: 320px) {
+    /* checkout */
+    .check-list {
+        height: 2350px;
+    }
+    .checkout input {
+        width: 280px !important;
+    }
+    .check-right {
+        padding: 0px;
+    }
+    /*  */
+} 
+@media (max-width: 375px) {
+    /* checkout */
+    .check-list {
+        height: 2250px;
+    }
+    .checkout input {
+        width: 320px !important;
+    }
+    .check-right {
+        padding: 0px;
+    }
+    /*  */
+}
+/* } 
+.topnav .icon {
+    display: none;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+ 
+  
+  .topnav a:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  } */

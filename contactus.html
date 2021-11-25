@@ -25,28 +25,44 @@
                     <img src="img/logo.png">
                     <p>Vietnam</p>
                 </div>
-                <div class="header-menu col-6">
-                    <ul>
+                <div class="header-menu col-6 ">
+                     <ul >
                         <li><a href="home.html">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="tourdetail.html">Tours</a></li>
                         <li><a href="">Hotels</a></li>
                         <li><a href="contactus.html">Contact</a></li>
                         <li><a href="">Login</a></li>
-                    </ul>
+                        
+                    </ul> 
+                    <!-- <a href="#home" class="active">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
                 </div>
             </div>
-            <div class="contact-us">
-                <h1>Contact Us</h1>
+            <div class="row">
+                <div class="contact-us col-4">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="col-8"></div>
+
             </div>
+            
         </header>
         <main>
-            <div class="side3">
-                <p>Home <img src="/img/icon/Ellipse 13.svg"> Contact us </p>
+            <div class="row">
+                <div class="side3 col-4">
+                    <p>Home <img src="/img/icon/Ellipse 13.svg"> Contact us </p>
+                </div>
+                <div class="col-8"></div>
+
             </div>
-            <div class="contact-group">
-                <div class="contact-row ">
-                    <div class="contact-from">
+            
+            <div class="contact-group container-fluid">
+                <div class="contact-row row ">
+                    <div class="contact-from  col-lg-6 col-12">
                         <h2><b>We'd love to hear from you</b></h2>
                         <p>Send us a message and we'll respond as soon as possible</p>
                         <input type="text" placeholder="Your Name">
@@ -55,7 +71,7 @@
                         <textarea id="subject" name="subject" placeholder="Message" ></textarea>
                         <input type="submit" value="Send Message">
                     </div>
-                    <div class="contact-background"> 
+                    <div class="contact-background col-lg-6 col-12"> 
                         <div class="contact-back-from">
                             <h1>Our Office</h1>
                             <div class="contact-div"><div class="icon-x2"><img src="/img/icon/home.svg"></div><div><h6>Address</h6><p>27 Old Gloucester Street, London, WC1N 3AX</p></div></div>
@@ -66,10 +82,10 @@
                 </div>
             </div>
         </main>
-        <div class="background-map"></div>
+        <div class="background-map"><img src="/img/mapgo.png"></div>
         <footer>
-            <div class="footer-content">
-              <div class="logo">
+            <div class="footer-content row">
+              <div class="logo col-3" >
                   <div class="footer-text">
                       <img src="img/logo.png">
                       <p>Vietnam</p>
@@ -80,7 +96,7 @@
                       <img src="/img/icon/Vector.png">
                   </div>
               </div>
-              <div class="footer-menu1">
+              <div class="footer-menu1 col-3">
                   <ul>
                       <li><a>Home</a></li>
                       <li><a>About</a></li>
@@ -89,7 +105,7 @@
                       <li><a>Contact</a></li>
                   </ul>
                   </div>
-              <div class="footer-menu2">
+              <div class="footer-menu2 col-3">
                   <ul>
                       <li><a>Partner with us</a></li>
                       <li><a>Terms & Conditions</a></li>
@@ -97,7 +113,7 @@
                       <li><a>Guest Policy</a></li>
                   </ul>
               </div>
-              <div class="footer-right ">
+              <div class="footer-right col-3 ">
                   <div class="contact-div">
                       <div class="footer-img"><img src="/img/icon/map-white.png"></div>
                       <div class="footer-p"><p>Lilama 10 Tower, 56 To Huu, Trung Van, Nam Tu Liem, Ha Noi</p></div>
@@ -111,5 +127,15 @@
             <div class="footer-bottom "><p>Copyright © We.travel. All rights reserved</p></div>
           </footer>
     </div>
+    <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script> -->
 </body>
 </html>
