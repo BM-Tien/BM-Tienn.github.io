@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/docs.theme.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -15,13 +16,18 @@
     <script src="js/owl.carousel.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/page.css">
+ 
 </head>
 <body>
-    <div class="wapper">
-        <div class="checkout">
-            <div class="check-list">
+    <div class=" container  ">
+        <div class="row">
+            <div>
+                <h2>Booking Submission</h2>
+            </div>
+        </div>
+        <div class="checkout row ">
+            <div class="check-list col-lg-8 col-12  col-sm-12 ">
                 <form>
-                    <h2>Booking Submission</h2>
                     <hr>
                     <h4><strong>Traveler Details</strong></h4>
                     <p>Information we need to confirm your tour or activity</p>
@@ -46,8 +52,10 @@
                     </div>
                     <h5><strong>Address</strong></h5>
                     <div class="input-flex-address">
-                        <strong>Your Address</strong>
-                        <input type="text" placeholder="Your Address">
+                        <div class=" ">
+                            <strong>Your Address</strong>
+                            <input type="text"  placeholder="Your Address">
+                        </div>
                     </div>
                     <div class="input-flex">
                         <div class="input-flex-left">
@@ -78,7 +86,7 @@
                         <span>
                             <input type="checkbox" ><strong>Credit Card</strong>
                         </span>
-                        <img src="img/card.png">
+                        <img src="img/card.png" class="img-card">
                     </div>
                     <div class="check-list-box">
                         <span>
@@ -113,8 +121,8 @@
                     <button>Complete Booking</button>
                 </form>
             </div>
-            <div class="check-right">
-                <div class="check-form">
+            <div class="check-right col-lg-4  col-sm-12 ">
+                <div class="check-form ">
                     <form>
                         <h5><strong>Discover interesting things in the romantic coastal city of Vungtau</strong></h5>
                         <p class="checkout-map">Vungtau City, Baria-Vungtau</p>
@@ -136,7 +144,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="check-total">
+                <div class="check-total  ">
                     <p class="total-text">Total</p><p class="total-numb">$456</p>
                 </div>
             </div>

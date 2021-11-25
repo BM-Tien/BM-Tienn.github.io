@@ -14,44 +14,47 @@
 .wapper .contact-us {
     width: 551px;
     height: 60px;
-    padding-left: 165px;
+    margin: 0px auto;
 }
-.background-map {
-    background-image:url('/img/mapgo.png');
-    width: 1440px;
-    height:500px;
-    margin: 100px auto 0px;
+.background-map img {
+    /* background-image:url('/img/mapgo.png');
+     width: 1440px; 
+    height:auto ;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    width: 100%;
+    margin-top: 100px;
 }
 footer {
     margin:0px auto;
-    width: 1440px;
+    /* width: 1440px; */
 }
-main .side3 img ,
-div .side3 img{
+main div .side3 img {
     width: 4px;
     height:4px;
     margin : 0px 30px;
 }
-main .side3 ,
-div .side3 {
-    padding-left: 165px;
-    margin:50px 0px;
+main div .side3  {
+    /* padding-left: 20%; */
+    margin:50px auto;
 }
 main .contact-group .contact-row {
-    margin : 0px 0px 0px 165px;
+    margin : 0px auto;
     width: 1100px;
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
-main .contact-group .contact-row .contact-from {
-    width: 500px;
-}
-main .contact-group .contact-row .contact-background {
+/* .contact-group .contact-row .contact-from {
+    height: 324px;
+} */
+/* main .contact-group .contact-row .contact-background {
     width: 550px;
 
-}
+} */
 main .contact-group .contact-row input,
 main .contact-group .contact-row  textarea {
-    width:500px;
+    width:100%;
     height: 50px;
     background-color:#F5F5F5;
     padding-left: 15px;
@@ -71,7 +74,7 @@ main .contact-group .contact-row p {
     background-color:#FF7B42;
     border: none;
     color : #ffffff;
-    width: 200px;
+    width: 40%;
     height:44px;
     float:right;
     margin-top:15px;
@@ -82,13 +85,13 @@ main .contact-group .contact-row p {
     height:564px ;
     background-repeat: no-repeat;
     background-size : 100%;
-    margin-left:60px;
+    /* margin-left:60px;  */
 }
 .contact-row .contact-background .contact-back-from {
     width: 420px;
     height: 352px;
     background-color:#1C1C1E;
-    position : absolute;
+     position : absolute; 
     margin-top:212px;
 }
 .contact-back-from h1,
