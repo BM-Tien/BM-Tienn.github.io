@@ -14,19 +14,20 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <script src="js/owl.carousel.js"></script>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/css/reposive.css">
 </head>
 <body>
     <div class="wapper ">
         <!--header-->
         <header class="tour-detail">
+          <div class="container-fluid">
             <div class="header-top row">
                 <div class="header-logo col-6">
                     <img src="img/logo2.png">
-                    <p>Vietnam</p>
+                    
                 </div>
                 <div class="header-menu col-6">
-                    <ul>
+                    <ul class="menu-play">
                         <li><a href="home.html">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="tourdetail.html">Tours</a></li>
@@ -34,24 +35,50 @@
                         <li><a href="contactus.html">Contact</a></li>
                         <li><a href="">Login</a></li>
                     </ul>
+                    <div id="dp_menu" class="dp_menu">
+                      <button id="button-menu"></button>
+                      <ul class="main-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="tourdetail.html">Tours</a></li>
+                        <li><a href="">Hotels</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="">Login</a></li>
+                      </ul>
+                    </div>
                 </div>
             </div>
+          </div>
         </header>
         <hr>
-        <div class="tour-side">
-            <div class="side3">
-                <p>Home <img src="/img/icon/Ellipse 13.svg"> Tours  <img src="/img/icon/Ellipse 13.svg"> Detail tour  </p>
+        <div class="container-fluid list-side3">
+          <div class="row">
+              <div class="side3 col-lg-4">
+                <p>Home <img class="side3-img-2"src="/img/icon/Ellipse 13.svg"> Tours  <img class="side3-img-2" src="/img/icon/Ellipse 13.svg"> Detail tour  </p>
+              </div>
+              <div class="col-lg-8"></div>
+          </div>
+      </div>
+      <div class="container-fluid list-side3">
+        <div class="row">
+            <div class="side3 col-lg-8">
+              <h2 class="side-text">Discover interesting things in the romantic coastal city of Vungtau</h2>
+              <p class="tour-side-map">Vungtau City, Baria-Vungtau</p>
+              <div class="tour-side-review">
+                  <div class="tour-side-star"><strong>4.5</strong></div>
+                  <p>128 reviews</p>
+              </div>
             </div>
-            <h2>Discover interesting things in the romantic coastal city of Vungtau</h2>
-            <p class="tour-side-map">Vungtau City, Baria-Vungtau</p>
-            <div class="tour-side-review">
-                <div class="tour-side-star"><strong>4.5</strong></div>
-                <p>128 reviews</p>
-            </div>
+            <div class="col-lg-4"></div>
         </div>
-        <div class="tour-detail-content ">
-            <div class="tour-show">
-                <img src="img/icon/shape-tour.svg" class="tour-show-stick">
+    </div>
+      
+        
+        <div class="tour-detail-content container mt-3 ">
+          
+            <div class="tour-show  ">
+                <div>
+                  <img src="img/icon/shape-tour.svg" class="tour-show-stick">
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
                 <div class="mySlides">
@@ -69,7 +96,9 @@
                   <img src="img/Rectangle 20 (6).jpg">
                 </div>
                 
-                <div class="row">
+                </div>
+               
+                <div class=" column-img">
                     <div class="column">
                       <img class="demo cursor " src="img/Rectangle 20 (3).jpg" onclick="currentSlide(1)" alt="The Woods">
                     </div>
@@ -84,18 +113,387 @@
                     </div>
                 </div>
                 <div class="tour-detail-menu">
-                    <ul>
-                        <li><a href="decription.html"  >Descriptions</a></li>
-                        <li><a href="additional.html">Additional Info</a></li>
-                        <li><a href="review.html">Reviews(54)</a></li>
+                    <ul class="nav nav-tabs menu-border">
+                        <li class="nav-item"><a  class="nav-link active" data-toggle="tab" href="#descriptions">Descriptions</a></li>
+                        <li><a class="nav-link " data-toggle="tab" href="#additional">Additional Info</a></li>
+                        <li><a class="nav-link " data-toggle="tab" href="#review">Reviews(54)</a></li>
                     </ul>
                 </div>
+                <div class="tab-content" >
+                <div class="tour-detail-list descrip-play container tab-pane active" id="descriptions">     
+                  <div class="tour-overview">
+                        <hr>
+                        <h5>Overview</h5>
+                        <p>
+                            Set sail for the idyllic Italian island of Capri on this full-day tour,
+                            including round-trip jetfoil transfers from Naples or Sorrento. 
+                            Stop to browse the handicraft stores of Anacapri and soak up the atmosphere in buzzing La Piazzetta. 
+                            Top it off with a visit to the Blue Grotto and a funicular ride to Marina
+                        </p>
+                        <ul>
+                          <li>
+                            Full-day tour of Capri island from Naples or Sorrento Admire views along 
+                            the coast as you cruise to the island by jetfoil
+                          </li>
+                          <li>
+                            Visit the lively island towns of Anacapri and Capri Ride
+                          </li>
+                          <li>
+                            The funicular from La Piazzetta to Marina Grande Marvel at natural wonders like 
+                            the Blue Grotto Small-group tour ensures a personalized experience 
+                          </li>
+                        </ul>
+                      <hr>
+                  </div>
+                  <div class="included">
+                    <h5>What's Included</h5>
+                    <p>Port pickup and drop-off</p>
+                    <p>Local guide </p>
+                    <p>Round-trip shared transfer</p>
+                    <p>Transport by minibus</p>
+                    <p> Blue Grotto admission tickets</p>
+                    <p>Shared boat ride tour around the island ( if Blue grotto is closed)</p>
+                    <hr>
+                  </div>
+                  <div class="departure" >
+                    <h5>Departure & Return</h5>
+                    <strong>Departure Point</strong>
+                    <p>1: Molo Beverello, 80133 Napoli NA, Italy</p>
+                    <p>2: Hotel Il Faro, Via Marina Piccola, 5, 80067 Sorrento NA, Italy  </p>
+                    <strong>Departure Time</strong>
+                    <p>8:00 AM </p>
+                    <hr>
+                  </div>
+                  <div class="itinerary">
+                    <h5>Tour Itinerary</h5>
+                    <div class="day container mt-3" >
+                        <div class="day-molo" data-toggle="collapse" data-target="#demo1">
+                          <strong>Day 1: Molo Beverello (4 stops)</strong>
+                          <img src="img/icon/icon-mui-ten.svg"  >
+                        </div>
+                        <div id="demo1" class="collapse">
+                        <div class="day-molo-list ">
+                          <img src="img/icon/map-pin.svg">
+                          <div class="day-molo-content">
+                            <strong>Molo Beverello</strong>
+                            <p>
+                              We start our trip from the famouse place Jemaa Lefna in center of Marrakech,
+                              Crossed the highest Atlas Through pass (Tizi N Tichka)
+                            </p>
+                            <p class="duration"><b>Duration:</b> 5 minutes</p>
+                            <p>Admission Ticket Free</p>
+                          </div>
+                        </div>
+                        <div class="day-molo-list">
+                          <img src="img/icon/map-pin.svg">
+                          <div class="day-molo-content">
+                            <strong>Marina Piccola </strong>
+                            <p>
+                              so we will visit the UNESCO World Heritage Site Ait Benhaddou / Official 
+                              name Ksar of Ait-Ben-Haddou is located in south of Morocco,
+                              It is an ighrem (fortified village in English) (ksar in Arabic), 
+                              along the former caravan route between the Sahara and Marrakech in present-day Morocco.
+                              Most citizens attracted by the tourist trade live in more modern dwellings in a village 
+                              on the other side of the river,although there are four families still living in the ancient village. 
+                              Inside the walls of the ksar are half a dozen
+                              (Kasbahs) or merchants houses and other individual dwellings,
+                            </p>
+                            <p class="duration"><b>Duration:</b>  1 hour 30 minutes</p>
+                            <p>Admission Ticket Free</p>
+                          </div>
+                        </div>
+                        <div class="day-molo-list">
+                          <img src="img/icon/map-pin.svg">
+                          <div class="day-molo-content">
+                            <strong>Blue Grotto</strong>
+                            <p>
+                              Pass trough the Ait Saouen Col in anti atlas
+                            </p>
+                          </div>
+                        </div>
+                        <div class="day-molo-list">
+                          <img src="img/icon/map-pin.svg">
+                          <div class="day-molo-content">
+                            <strong>Villa San Michele</strong>
+                            <p>
+                              Crossed by the Draa valley,where there is more than 2 million palms along the draa 
+                              river which stretches for a length to Senegal to the south.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="day container mt-3">
+                      <div class="day-molo"  data-toggle="collapse" data-target="#demo2">
+                        <strong>Day 2: Molo Beverello (4 stops)</strong>
+                        <img src="img/icon/icon-mui-ten.svg"  >
+                      </div>
+                      <div id="demo2" class="collapse">
+                      <div class="day-molo-list">
+                        <img src="img/icon/map-pin.svg">
+                        <div class="day-molo-content">
+                          <strong>Molo Beverello</strong>
+                          <p>
+                            We start our trip from the famouse place Jemaa Lefna in center of Marrakech,
+                            Crossed the highest Atlas Through pass (Tizi N Tichka)
+                          </p>
+                          <p class="duration"><b>Duration:</b> 5 minutes</p>
+                          <p>Admission Ticket Free</p>
+                        </div>
+                      </div>
+                      <div class="day-molo-list">
+                        <img src="img/icon/map-pin.svg">
+                        <div class="day-molo-content">
+                          <strong>Marina Piccola </strong>
+                          <p>
+                            so we will visit the UNESCO World Heritage Site Ait Benhaddou / Official 
+                            name Ksar of Ait-Ben-Haddou is located in south of Morocco,
+                            It is an ighrem (fortified village in English) (ksar in Arabic), 
+                            along the former caravan route between the Sahara and Marrakech in present-day Morocco.
+                            Most citizens attracted by the tourist trade live in more modern dwellings in a village 
+                            on the other side of the river,although there are four families still living in the ancient village. 
+                            Inside the walls of the ksar are half a dozen
+                            (Kasbahs) or merchants houses and other individual dwellings,
+                          </p>
+                          <p><b>Duration:</b>  1 hour 30 minutes</p>
+                          <p>Admission Ticket Free</p>
+                        </div>
+                      </div>
+                      <div class="day-molo-list">
+                        <img src="img/icon/map-pin.svg">
+                        <div class="day-molo-content">
+                          <strong>Blue Grotto</strong>
+                          <p>
+                            Pass trough the Ait Saouen Col in anti atlas
+                          </p>
+                        </div>
+                      </div>
+                      <div class="day-molo-list">
+                        <img src="img/icon/map-pin.svg">
+                        <div class="day-molo-content">
+                          <strong>Villa San Michele</strong>
+                          <p>
+                            Crossed by the Draa valley,where there is more than 2 million palms along the draa 
+                            river which stretches for a length to Senegal to the south.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="day container mt-3">
+                      <div class="day-molo" data-toggle="collapse" data-target="#demo3">
+                        <strong>Day 3: Molo Beverello (1 stops)</strong>
+                        <img src="img/icon/icon-mui-ten.svg"  >
+                      </div>
+                      <div id="demo3" class="collapse">
+                      <div class="day-molo-list">
+                        <img src="img/icon/map-pin.svg">
+                        <div class="day-molo-content">
+                          <strong>Molo Beverello</strong>
+                          <p>
+                            We start our trip from the famouse place Jemaa Lefna in center of Marrakech,
+                            Crossed the highest Atlas Through pass (Tizi N Tichka)
+                          </p>
+                          <p class="duration"><b>Duration:</b> 5 minutes</p>
+                          <p>Admission Ticket Free</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="tour-detail-list-maps">
+                    <h5>Maps</h5>
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8703469092825!2d105.79155841533183!3d20.99783369420833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab1167edbae7%3A0xa0790fee2a2a9c1b!2sAdamo%20Digital%20-%20Leading%20Vietnam%20Software%20Outsourcing%20Company!5e0!3m2!1svi!2s!4v1637059724822!5m2!1svi!2s"  allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                  <div class="tour-detail-list-video">
+                    <h5>360° Panoramic Images and Videos</h5>
+                    <iframe src="https://momento360.com/e/u/330f5389168e415aa50d40f5b9f90a5e?utm_campaign=embed&utm_source=other&heading=98.34&pitch=45.79&field-of-view=75&size=medium" allowfullscreen="" loading="lazy"></iframe>       
+                    <video  controls>
+                      <source src="mov_bbb.mp4" type="video/mp4">
+                      <source src="mov_bbb.ogg" type="video/ogg">
+                      Your browser does not support HTML video.
+                    </video>
+                  </div>
+                </div> 
+                <div class="tour-detail-list addition-play container tab-pane fade" id="additional">
+                  <hr>
+                  <div class="addition-play-ul">
+                    <ul>
+                      <li>Confirmation will be received at time of booking</li>
+                      <li>Not recommended for travelers with back problems</li>
+                      <li>Not recommended for pregnant travelers Infant seats available</li>
+                      <li>Not wheelchair accessible</li>
+                      <li>Children must be accompanied by an adult</li>
+                      <li>Vegetarian option is available, please advise at time of booking if required</li>
+                      <li>Minimum numbers apply.</li>
+                      <li>There is a possibility of cancellation after confirmation if the meteorological</li>
+                      <li>Conditions do not allow it</li>
+                      <li>Stroller accessible</li>
+                      <li>Service animals allowed</li>
+                      <li>Near public transportation</li>
+                      <li>Most travelers can participate</li>
+                      <li>This tour/activity will have a maximum of 17 travelers</li>
+                    </ul>
+                  </div>
+                  <div class="addition-faqs">
+                    <h5>FAQs</h5>
+                    <div class="faq ">
+                      <div class="faq-list container mt-3">
+                        <div class="faq-list-title" data-toggle="collapse" data-target="#demo4">
+                          <img class="faq-help" src="img/icon/help-circle.svg">
+                          <p class="faq-title">
+                            What is the maximum group size during 2 Days
+                            1 Night To Zagora Desert From Marrakech?
+                          </p>
+                          <img class="faq-tick" src="img/icon/icon-mui-ten.svg">
+                        </div>
+                        <div  id="demo4" class="collapse">
+                        <div class="faq-content">
+                          <p>
+                            This activity will have a maximum of 17 travelers.
+                           
+                          </p>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="faq">
+                      <div class="faq-list container mt-3">
+                        <div class="faq-list-title" data-toggle="collapse" data-target="#demo5">
+                          <img class="faq-help" src="img/icon/help-circle.svg">
+                          <p class="faq-title">
+                            When and where does the tour start?
+                          </p>
+                          <img class="faq-tick" src="img/icon/icon-mui-ten.svg">
+                        </div>
+                        <div  id="demo5" class="collapse">
+                        <div class="faq-content" >
+                          <p>
+                            This activity will have a maximum of 17 travelers.
+                           
+                          </p>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="faq">
+                      <div class="faq-list container mt-3">
+                        <div class="faq-list-title" data-toggle="collapse" data-target="#demo6">
+                          <img class="faq-help" src="img/icon/help-circle.svg">
+                          <p class="faq-title">
+                            Do you arrange airport transfers?
+                          </p>
+                          <img class="faq-tick" src="img/icon/icon-mui-ten.svg">
+                        </div>
+                        <div  id="demo6" class="collapse">
+                        <div class="faq-content" >
+                          <p>
+                            This activity will have a maximum of 17 travelers.
+                            This activity will have a maximum of 17 travelers.
+                          </p>
+                          <p>
+                            This activity will have a maximum of 17 travelers.
+                            This activity will have a maximum of 17 travelers.
+                          </p>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tour-detail-list review-play container tab-pane fade" id="review">
+                  <hr>
+                  <div class="review-form">
+                      <div class="review-form-left">
+                          <strong>4/5</strong>
+                          <img src="img/icon/4-5star.svg">
+                          <p>Based on <b>150 reviews</b></p>
+                      </div>
+                      <div class="review-clear"></div>
+                      <div class="review-form-right">
+                          <div class="review-form-range row">
+                              <strong>5</strong><img src="img/icon/1star.svg" alt="">
+                              <span class="review-range"></span>
+                              <p>42 reviews</p>
+                          </div>
+                          <div class="review-form-range row">
+                              <strong>4</strong><img src="img/icon/1star.svg" alt="">
+                              <span class="review-range"></span>
+                              <p>21 reviews</p>
+                          </div>
+                          <div class="review-form-range row">
+                              <strong>3</strong><img src="img/icon/1star.svg" alt="">
+                              <span class="review-range"></span>
+                              <p>36 reviews</p>
+                          </div>
+                          <div class="review-form-range row">
+                              <strong>2</strong><img src="img/icon/1star.svg" alt="">
+                              <span class="review-range"></span>
+                              <p>0 reviews</p>
+                          </div>
+                          <div class="review-form-range row">
+                              <strong>1</strong><img src="img/icon/1star.svg" alt="">
+                              <span class="review-range"></span>
+                              <p>0 reviews</p>
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="review-upload row">
+                      <img src="img/avata-fb.jpg" class="avta-upload"> 
+                      <form>
+                          <input type="text" placeholder="Type anything"> 
+                          <img src="img/icon/5star-yelow.svg" >
+                          <button class="upload-btn">Upload review</button>
+                      </form>
+                      
+                  </div>
+                  <hr>
+                  <div class="review-comment row">
+                      <img src="img/nui.png" class="review-img-avata"> 
+                      <div class="review-name">
+                          <img src="img/icon/5star-yelow.svg">
+                          <p><strong>The best experience ever!</strong></p>
+                          <p>Nevermind<img src="img/icon/Ellipse 26.svg" class="review-name-img">Sep 2020</p>
+                      </div>
+                      <p>
+                          It was excellent! The trip is long but the van are comfortable and have wi-fi. 
+                          The driver very friendly as well as Ahmed our guide to the dromedaries. 
+                          The camp was beautiful, comfortable beds, clean bathroom and delicious food!
+                      </p>
+                  </div>
+                  <hr>
+                  <div class="review-comment row">
+                      <img src="img/nui.png" class="review-img-avata"> 
+                      <div class="review-name">
+                          <img src="img/icon/5star-yelow.svg">
+                          <p><strong>The best experience ever!</strong></p>
+                          <p>Nevermind<img src="img/icon/Ellipse 26.svg">Sep 2020</p>
+                      </div>
+                      <p>
+                          It was excellent! The trip is long but the van are comfortable and have wi-fi. 
+                          The driver very friendly as well as Ahmed our guide to the dromedaries. 
+                          The camp was beautiful, comfortable beds, clean bathroom and delicious food!
+                      </p>
+                  </div>
+                  <hr>
+                  <div class="container review-pagination">
+                      <ul class="pagination review-pagi-ul">
+                        <li class="page-item review-item" ><a class="page-link" href="#"><img src="img/icon/pagi-left.svg"></a></li>
+                        <li class="page-item review-item "><a class="page-link review-active" href="#">1</a></li>
+                        <li class="page-item review-item "><a class="page-link" href="#">2</a></li>
+                        <li class="page-item review-item"><a class="page-link" href="#"><img src="img/icon/pagi-right.svg"></a></li>
+                      </ul>
+                    </div>
+              </div>
+              </div>
+                
             </div>
-            <div class="tour-detail-form">
+            <div class="tour-detail-form ">
                 <p class="tour-from">from<strong>$234.00</strong></p>
                 <hr>
                 <div class="check-form form-tour-detail">
-                    <form>
+                    <form class="tour-form-height">
                         <div class="check-form-flex">
                             <span>
                                 <p>Duration:</p>
@@ -118,136 +516,155 @@
                 </div>
               
             </div>
-            
+         
         </div>
-        <div class="related-tours columnss">
+        <div class="related-tours columnss ">
           <h3 class="related-slider">Related tours</h3>
           <div class="list-all">
-            <div class="list-item">
-                <img src="img/icon/shape.png"class="img-shape">
-                <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
-                <div class="item-star">4.5</div>
-                <div class="item-infor">
-                    <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
-                    <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
-                    <div class="item-day">
-                        <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
-                        <span class="list-span">from <b>$146.00</b> </span>
-                    </div>
-                </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="list-item rela-list-item col-lg-4 col-md-4">
+                  <img src="img/icon/shape.png"class="img-shape">
+                  <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
+                  <div class="item-star">4.5</div>
+                  <div class="item-infor">
+                      <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
+                      <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
+                      <div class="item-day">
+                          <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
+                          <span class="list-span">from <b>$146.00</b> </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="list-item rela-list-item col-lg-4 col-md-4">
+                  <img src="img/icon/shape.png"class="img-shape">
+                  <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
+                  <div class="item-star">4.5</div>
+                  <div class="item-infor">
+                      <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
+                      <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
+                      <div class="item-day">
+                          <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
+                          <span class="list-span">from <b>$146.00</b> </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="list-item rela-list-item col-lg-4 col-md-4">
+                  <img src="img/icon/shape.png"class="img-shape">
+                  <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
+                  <div class="item-star">4.5</div>
+                  <div class="item-infor">
+                      <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
+                      <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
+                      <div class="item-day">
+                          <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
+                          <span class="list-span">from <b>$146.00</b> </span>
+                      </div>
+                  </div>
+              </div>
+              </div>
             </div>
-            <div class="list-item">
-                <img src="img/icon/shape.png"class="img-shape">
-                <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
-                <div class="item-star">4.5</div>
-                <div class="item-infor">
-                    <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
-                    <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
-                    <div class="item-day">
-                        <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
-                        <span class="list-span">from <b>$146.00</b> </span>
-                    </div>
-                </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="list-item rela-list-item col-lg-4 col-md-4">
+                  <img src="img/icon/shape.png"class="img-shape">
+                  <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
+                  <div class="item-star">4.5</div>
+                  <div class="item-infor">
+                      <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
+                      <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
+                      <div class="item-day">
+                          <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
+                          <span class="list-span">from <b>$146.00</b> </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="list-item rela-list-item col-lg-4 col-md-4">
+                  <img src="img/icon/shape.png"class="img-shape">
+                  <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
+                  <div class="item-star">4.5</div>
+                  <div class="item-infor">
+                      <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
+                      <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
+                      <div class="item-day">
+                          <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
+                          <span class="list-span">from <b>$146.00</b> </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="list-item rela-list-item col-lg-4 col-md-4">
+                  <img src="img/icon/shape.png"class="img-shape">
+                  <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
+                  <div class="item-star">4.5</div>
+                  <div class="item-infor">
+                      <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
+                      <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
+                      <div class="item-day">
+                          <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
+                          <span class="list-span">from <b>$146.00</b> </span>
+                      </div>
+                  </div>
+              </div>
+              </div>
             </div>
-            <div class="list-item">
-                <img src="img/icon/shape.png"class="img-shape">
-                <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
-                <div class="item-star">4.5</div>
-                <div class="item-infor">
-                    <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
-                    <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
-                    <div class="item-day">
-                        <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
-                        <span class="list-span">from <b>$146.00</b> </span>
-                    </div>
-                </div>
-            </div>
-            <div class="list-item">
-                <img src="img/icon/shape.png"class="img-shape">
-                <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
-                <div class="item-star">4.5</div>
-                <div class="item-infor">
-                    <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
-                    <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
-                    <div class="item-day">
-                        <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
-                        <span class="list-span">from <b>$146.00</b> </span>
-                    </div>
-                </div>
-            </div>
-            <div class="list-item">
-                <img src="img/icon/shape.png"class="img-shape">
-                <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
-                <div class="item-star">4.5</div>
-                <div class="item-infor">
-                    <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
-                    <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
-                    <div class="item-day">
-                        <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
-                        <span class="list-span">from <b>$146.00</b> </span>
-                    </div>
-                </div>
-            </div>
-            <div class="list-item">
-                <img src="img/icon/shape.png"class="img-shape">
-                <img src="img/Rectangle 20 (3).jpg" class="img-backgr">
-                <div class="item-star">4.5</div>
-                <div class="item-infor">
-                    <div class="item-map"><img src="img/icon/map.svg" > Sapa, Laocai</div>
-                    <div class="item-name"><b>Discover interesting things in the romantic coastal city of Vungtau</b></div>
-                    <div class="item-day">
-                        <span><img src="img/icon/time.svg" > 3 days - 2 night</span>
-                        <span class="list-span">from <b>$146.00</b> </span>
-                    </div>
-                </div>
-            </div>
+            
+            
+            
           </div>
         </div>
         <footer>
-          <div class="footer-content">
-            <div class="logo">
-                <div class="footer-text">
-                    <img src="img/logo.png">
-                    <p>Vietnam</p>
-                </div>
-                <div class="footer-group-icon">
-                    <img src="/img/icon/facebook.png">
-                    <img src="/img/icon/ins.png">
-                    <img src="/img/icon/Vector.png">
-                </div>
-            </div>
-            <div class="footer-menu1">
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Tours</a></li>
-                    <li><a>Hotels</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-                </div>
-            <div class="footer-menu2">
-                <ul>
-                    <li><a>Partner with us</a></li>
-                    <li><a>Terms & Conditions</a></li>
-                    <li><a>Privacy Policy</a></li>
-                    <li><a>Guest Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-right ">
-                <div class="contact-div">
-                    <div class="footer-img"><img src="/img/icon/map-white.png"></div>
-                    <div class="footer-p"><p>Lilama 10 Tower, 56 To Huu, Trung Van, Nam Tu Liem, Ha Noi</p></div>
-                </div>
-                <div class="contact-div">
-                    <div class="footer-img"><img src="/img/icon/mail.svg"></div>
-                    <div  class="footer-p"><p>hello@adamotravel.com</p></div>
-                </div>
-            </div>
+          <div class="container-fluid">
+           <div class="footer-content row">
+             <div class="logo col-lg-3 col-12 col-md-3" >
+                 <div class="footer-text">
+                     <img src="img/logo.png">
+                 </div>
+                 <div class="footer-group-icon">
+                     <img src="/img/icon/facebook.png">
+                     <img src="/img/icon/ins.png">
+                     <img src="/img/icon/Vector.png">
+                 </div>
+             </div>
+             <div class="footer-menu1 col-lg-3 col-12 col-md-3">
+                 <ul>
+                     <li><a>Home</a></li>
+                     <li><a>About</a></li>
+                     <li><a>Tours</a></li>
+                     <li><a>Hotels</a></li>
+                     <li><a>Contact</a></li>
+                 </ul>
+                 </div>
+             <div class="footer-menu2 col-lg-3 col-12 col-md-3">
+                 <ul>
+                     <li><a>Partner with us</a></li>
+                     <li><a>Terms & Conditions</a></li>
+                     <li><a>Privacy Policy</a></li>
+                     <li><a>Guest Policy</a></li>
+                 </ul>
+             </div>
+             <div class="footer-right col-lg-3 col-12 col-md-3 ">
+                 <div class="contact-div">
+                     <div class="footer-img"><img src="/img/icon/map-white.png"></div>
+                     <div class="footer-p"><p>Lilama 10 Tower, 56 To Huu, Trung Van, Nam Tu Liem, Ha Noi</p></div>
+                 </div>
+                 <div class="contact-div">
+                     <div class="footer-img"><img src="/img/icon/mail.svg"></div>
+                     <div  class="footer-p"><p>hello@adamotravel.com</p></div>
+                 </div>
+             </div>
+           </div>
           </div>
-          <div class="footer-bottom "><p>Copyright © We.travel. All rights reserved</p></div>
-        </footer>
+         
+         <div class="footer-bottom "><p>Copyright © We.travel. All rights reserved</p></div>
+       </footer>
     </div>
     <script>
+      $(document).ready(function(){
+          $("#button-menu").click(function(){
+            $("#dp_menu > ul").toggle(500);
+            $("#dp_menu").toggleClass("show");
+          });
+        });
         var slideIndex = 1;
         showSlides(slideIndex);
         
@@ -276,7 +693,8 @@
           dots[slideIndex-1].className += " active";
           captionText.innerHTML = dots[slideIndex-1].alt;
         }
-          
+        
         </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
