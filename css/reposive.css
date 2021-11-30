@@ -1,9 +1,33 @@
 .columnss .rela-list-item  .img-shape {
     margin-left: 80%;
 }
+.rela-list-item {
+    margin-top: 20px;
+}
+@media (max-width: 1024px) {
+    
+}
 @media (max-width: 768px) {
     .columnss .rela-list-item  .img-shape {
         margin-left: 70%;
+    }
+    .rela-list-item {
+        margin-top: 0px;
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .item-infor .item-day .list-span {
+        margin: 0px;
+    }
+    .item-infor .item-day .list-span b {
+        margin: 0px;
+        font-size: 16px;
+    }
+    .related-slider {
+        margin: 20px 0px !important;
+    }
+    .faq-content p {
+        width: auto;
     }
 }
 @media  (max-width: 375px) {
@@ -41,8 +65,7 @@
         padding: 20px 50px;
     }
     .next {
-        margin-right: auto !important;
-        padding-right: 31px;
+        margin-right: 10px !important;
     }
     .columnss .rela-list-item .img-shape {
         margin-left: 90%;
@@ -52,7 +75,114 @@
         color: azure;
     }
     .rela-list-item {
-        margin: 20px 0px;
+        margin: 10px 0px;
         padding: 0px;
+    }
+    .rela-list-item .item-infor .item-map {
+        margin: 5px 0px;
+    }
+    .rela-list-item .item-name b {
+        font-size: 16px !important;
+    }
+    .tour-side3 .side-text {
+        font-size: 20px;
+        margin: 10px 0px !important;
+        font-weight: bold;
+    }
+    
+}
+@media  (max-width: 414px) {
+    .tour-detail-content {
+        display: block;
+    }
+    .tour-show {
+        width: 100%;
+    }
+    .tour-form-height,.tour-detail-form ,.check-form,.check-total{
+        width: auto;
+        height: auto;
+    }
+    .check-form ,.check-total{
+        padding: 0px;
+        margin: 0px;
+    }
+    .check-form input {
+        padding: 0px 90px;
+        width: 250px;
+        margin: 10px auto;
+        height: 30px;
+    }
+    .tour-detail-book .from-input-submit {
+        width: 200px;
+        margin: 10px 75px;
+    }
+    .tour-detail-total {
+        padding: 0px 50px;
+    }
+    .check-form .check-form-flex {
+        padding: 0px 50px;
+    }
+    .tour-detail-form .tour-from {
+        padding: 20px 50px;
+    }
+    .next {
+        margin-right: 10px !important;
+    }
+    .columnss .rela-list-item .img-shape {
+        margin-left: 90%;
+    }
+    #dp_menu .main-menu {
+        background-color: lightskyblue;
+        color: azure;
+    }
+    .rela-list-item {
+        margin: 10px 0px;
+        padding: 0px;
+    }
+    .rela-list-item .item-infor .item-map {
+        margin: 5px 0px;
+    }
+    .rela-list-item .item-name b {
+        font-size: 16px !important;
+    }
+    .tour-side3 .side-text {
+        font-size: 20px;
+        margin: 10px 0px !important;
+        font-weight: bold;
+    }
+    
+}
+@media (max-width: 320px) {
+    .check-form .check-form-flex {
+        padding: 0px 20px;
+    }
+    .tour-detail-content .tour-show .tour-show-stick {
+        margin-left: 75%;
+    }
+    .tour-detail-book .from-input-submit {
+        margin: 10px 45px;
+    }
+    .check-form input {
+        padding: 0px 0px 0px 50px;
+    }
+    .column {
+        width: 140px;
+    }
+}
+@media (max-width: 360px) {
+    .check-form .check-form-flex {
+        padding: 0px 20px;
+    }
+    .tour-detail-content .tour-show .tour-show-stick {
+        margin-left: 75%;
+    }
+    .tour-detail-book .from-input-submit {
+        margin: 10px 45px;
+    }
+    .check-form input {
+        padding: 0px 0px 0px 50px;
+    }
+    .column {
+        width: 140px;
     }
 }
